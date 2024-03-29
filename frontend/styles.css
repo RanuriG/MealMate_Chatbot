@@ -1,0 +1,264 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.menu {
+    margin-top: 40px;
+}
+
+.title-heading{
+    font-size: larger;
+    font-weight: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-item img {
+    height: 120px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.item-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.item-price {
+    color: #777;
+}
+
+.about {
+    background-color: #e6c3c3;
+    margin: 100px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .about p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .about .history {
+    margin-bottom: 20px;
+  }
+  
+  .about .commitment {
+    margin-bottom: 20px;
+  }
+  
+  .about .quality {
+    margin-bottom: 20px;
+  }
+ 
+  .contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 100px;
+    align-content: center;
+  }
+  
+  /* Styling for the contact section heading */
+  .contact h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Styling for the contact section paragraphs */
+  .contact p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+.reviews {
+    margin: 20px;
+    padding: 20px;
+}
+
+.reviews h2 {
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+.reviewer-name {
+    font-size: large;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul li {
+    margin-right: 10px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Reviews carousel styles */
+.review-box {
+    background-color: #ffcccc; /* Salmon pink */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+    position: relative; /* Added for arrow buttons positioning */
+    margin-bottom: 20px; /* Added for spacing */
+}
+
+.rating {
+    font-size: 24px;
+}
+
+.comment {
+    font-style: italic;
+}
+
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.prev-button {
+    left: 20px;
+}
+
+.next-button {
+    right: 20px;
+}
+
+.chat-bot {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border: none;
+    z-index: 1000; 
+}
